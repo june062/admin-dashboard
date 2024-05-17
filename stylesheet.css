@@ -52,6 +52,5 @@ body > *{
 
 }
 .profile-name > span{
-    align-self:;
     grid-area: 1/1/3/2;
 }
