@@ -1,6 +1,13 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --first-font-size: 1.5em;
+    --second-font-size: 1.2em;
+    --third-font-size: 1em;
+    --forth-font-size: .9em;
+    --fifth-font-size: .8em;
+}
 
 body{
     margin: 0;
@@ -10,6 +17,7 @@ body{
 }
 body > *{
     padding: 15px;
+    font-size: 100%;
 }
 .header{
     grid-area: 1/2/2/3;
@@ -21,6 +29,10 @@ body > *{
 .dashboard{
     grid-area: 1/1/3/2;
     background-color: rgb(17, 152, 242);
+}
+.dashboard .dashboard-item{
+    display: block;
+    
 }
 
 .projects{
@@ -53,4 +65,10 @@ body > *{
 }
 .profile-name > span{
     grid-area: 1/1/3/2;
+}
+.dashboard > div{
+    margin-bottom: 30px;
+}
+.dashboard div > span:not(.title){
+    margin-bottom: 15px;
 }
