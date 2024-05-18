@@ -37,9 +37,11 @@ body > *{
 
 .projects{
     display: grid;
-    grid-template-columns:3fr 1fr;
+    grid-template-columns:4fr 1fr;
     grid-area: 2/2/3/3;
     background-color: rgb(219, 217, 217);
+    padding: 40px 15px;
+    gap: 40px;
 
 }
 .search, .profile-pic, .buttons{
@@ -73,4 +75,25 @@ body > *{
 }
 .dashboard div > span:not(.title){
     margin-bottom: 15px;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr ));
+    gap: 20px;
+}
+
+.project-card{
+    border: solid black;
+}
+.topical-info{
+    display: flex;
+    flex-direction: column;
+}
+.announcements{
+    border: solid black;
+    flex: 5;
+}
+.trending{
+    flex: 4;
+    border: solid black;
 }
