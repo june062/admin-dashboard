@@ -96,11 +96,19 @@ body > *{
 .project-card{
     border: solid black;
 }
+.project-card > *, .announcements-list > *{
+    margin: 0px;
+    padding: 0px;
+}
+.projects-list > .project-card{
+    padding: 25px 15px;
+}
 .topical-info{
     display: flex;
     flex-direction: column;
 }
 .announcements{
+    padding: 25px;
     border: solid black;
     flex: 5;
     display: grid;
@@ -109,5 +117,13 @@ body > *{
 .trending{
     flex: 4;
     border: solid black;
+}
+
+.dashboard-item.title, .profile-name .name{
+    font-size:var(--first-font-size) ;
+}
+
+.dashboard-item{
+    font-size: var(--second-font-size);
 }
 
