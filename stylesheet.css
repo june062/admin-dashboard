@@ -16,7 +16,7 @@ body{
     grid-template: 1fr 4fr/ 1fr 4fr;
 }
 body > *{
-    padding: 15px;
+    padding: 20px;
     font-size: 100%;
 }
 .header{
@@ -24,6 +24,9 @@ body > *{
     display: grid;
     grid-template: 1fr 2fr/ 3fr 2fr;
     gap: 5px;
+}
+.header-child.search{
+    gap:20px;
 }
 
 .dashboard{
@@ -56,11 +59,17 @@ body > *{
     flex: 1;
 }
 .profile-pic{
-    justify-content: end;
+    justify-content: space-around;
+    padding: 0px calc(100vw - 1770px);
 }
 .buttons{
     justify-content: space-around;
 }
+.header-child > button{
+    width: 25%;
+    height: 40px;
+   
+} 
 
 .profile-name{
     display: grid;
@@ -94,8 +103,11 @@ body > *{
 .announcements{
     border: solid black;
     flex: 5;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
 }
 .trending{
     flex: 4;
     border: solid black;
 }
+
