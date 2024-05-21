@@ -41,10 +41,11 @@ body > *{
 .projects{
     display: grid;
     grid-template-columns:4fr minmax(250px, 1fr);
+    grid-template-rows: 20px 1fr;
     grid-area: 2/2/3/3;
     background-color: rgb(219, 217, 217);
     padding: 40px 15px;
-    gap: 40px;
+    column-gap: 40px;
 
 }
 .search, .profile-pic, .buttons{
@@ -106,6 +107,7 @@ body > *{
 .topical-info{
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 .announcements{
     padding: 25px;
@@ -114,9 +116,12 @@ body > *{
     display: grid;
     grid-template-rows: repeat(3,1fr);
 }
+
 .trending{
-    flex: 4;
+    padding: 25px;
     border: solid black;
+    flex: 4;
+    margin-top: -30px;
 }
 
 .dashboard-item.title, .profile-name .name{
@@ -126,4 +131,16 @@ body > *{
 .dashboard-item{
     font-size: var(--second-font-size);
 }
+h4, .mo{
+    margin: 0px;
+    font-size: var(--third-font-size);
+}
+h5, .buttons button{
+    font-size: var(--forth-font-size);
+}
+h6, .profile-name p::first-line{
+    font-size: var(--fifth-font-size);
+
+}
+
 
