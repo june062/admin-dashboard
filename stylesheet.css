@@ -129,7 +129,7 @@ body > *{
     padding: 10px;
 }
 .announcements-list ~ div.announcements-list{
-    border-top: solid black;
+    border-top: 2px solid;
 }
 
 .trending{
@@ -166,7 +166,7 @@ button, .dashboard-item{
     font-weight: 600
 }
 .project-card p, .topical-info p{
-    color: rgb(75,75,75)
+    color: rgb(75,75,75);
 }
 
 
