@@ -36,12 +36,9 @@ body > *{
 }
 
 .dashboard{
+    padding:15px;
     grid-area: 1/1/3/2;
     background-color: rgb(var(--dash-and-button-bg-color));
-}
-.dashboard .dashboard-item{
-    display: block;
-    
 }
 
 .projects{
@@ -92,8 +89,13 @@ body > *{
 .dashboard > div{
     margin-bottom: 30px;
 }
-.dashboard div > span:not(.title){
+.dashboard div > div:not(.title){
     margin-bottom: 15px;
+}
+.dashboard-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 .projects-list{
     display: grid;
@@ -168,5 +170,4 @@ button, .dashboard-item{
 .project-card p, .topical-info p{
     color: rgb(75,75,75);
 }
-
 
