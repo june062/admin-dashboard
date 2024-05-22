@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    font-family: swanswea, sans-serif;
+    line-height: 18px;
+
 }
 :root{
     --first-font-size: 1.6em;
@@ -12,6 +15,10 @@
     --dash-and-button-bg-color: 17, 152, 242;
     --header-border-radius: 30px;
 
+}
+@font-face {
+    font-family: swanswea;
+    src: url(assets/fonts/Swansea-q3pd.ttf);
 }
 
 body{
@@ -125,7 +132,6 @@ body > *{
 }
 .announcements{
     padding:10px;
-    /* border: solid black; */
     flex: 5;
     display: grid;
     grid-template-rows: repeat(3,1fr);
@@ -139,7 +145,6 @@ body > *{
 
 .trending{
     padding: 25px;
-    /* border: solid black; */
     flex: 4;
     margin-top: -25px; 
     display: grid;
