@@ -80,8 +80,8 @@ body > *{
 
 .profile-name{
     display: grid;
-    grid-template-columns: 100px 200px;
-    align-items: flex-end;
+    grid-template-columns: 100px 400px;
+    align-items: center;
 }
 .profile-name p{
     margin: 0px;
@@ -143,7 +143,9 @@ body > *{
     flex: 4;
     margin-top: -25px; 
     display: grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:5px;
+
 }
 
 .dashboard-item.title, .profile-name .name{
@@ -179,5 +181,20 @@ button, .dashboard-item{
     text-align: right;
 }
 
-
+.trending-item{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center; 
+}
+.trending-item *{
+    margin: 0;
+    padding: 0;
+}
+.trending-item .trending-user{
+    color: black;
+    margin-bottom: 3px;
+}
+.mo, .profile-name p{
+    font-weight: 800;
+}
 
